@@ -1,0 +1,3 @@
+[submodule "lichee"]
+	path = lichee
+	url = https://github.com/GreyPeter/lichee-android.git
