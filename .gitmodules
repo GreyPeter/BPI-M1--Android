@@ -1,3 +1,6 @@
 [submodule "lichee"]
 	path = lichee
 	url = https://github.com/GreyPeter/lichee-android.git
+[submodule "android"]
+	path = android
+	url = https://github.com/GreyPeter/Android-4.2.2.git
