@@ -4,3 +4,6 @@
 [submodule "android"]
 	path = android
 	url = https://github.com/GreyPeter/Android-4.2.2.git
+[submodule "busybox-1.23.1"]
+	path = busybox-1.23.1
+	url = https://github.com/GreyPeter/busybox-1.23.1.git
