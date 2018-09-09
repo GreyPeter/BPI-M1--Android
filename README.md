@@ -1,4 +1,4 @@
-# BananaPi-Android-4.2.2-Liab
+# BPI-Pro-Android
 # BananaPi Android 4.2.2 sources (liab version)
 
 =======
@@ -9,7 +9,7 @@ apt-get install git #Install git if required
 
 #Get the Source code
 
-git clone https://github.com/ChrisP-Android/BananaPi-Android-4.2.2-Liab android 
+git clone https://github.com/GreyPeter/BPI-Pro-Android.git android
 
 #Get svox PicoTTs from google to avoid DMCA notification on this repo!  
   
