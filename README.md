@@ -9,7 +9,7 @@ apt-get install git #Install git if required
 
 #Get the Source code
 
-git clone https://github.com/GreyPeter/BPI-Pro-Android.git android
+git clone --recursive https://github.com/GreyPeter/BPI-Pro-Android.git android
 
 #Get svox PicoTTs from google to avoid DMCA notification on this repo!  
   
