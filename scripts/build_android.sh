@@ -22,7 +22,18 @@ done
 echo
 
 extract-bsp
-make -j`nproc`
+
+case `uname -s` in
+    Darwin)
+        processors=$(sysctl -n hw.ncpu)
+        ;;
+    *)
+        processors=$(nproc)
+        ;;
+esac
+echo "Number of processors = $processors"
+make -j $processors
+
 if [ $? != 0 ] ; then
 echo
 echo "Error make!"
@@ -34,7 +45,7 @@ cd ..
 #mv lichee/tools/pack/sun7i_android_sugar-bpi.img ./bpi_android.img
 
 echo ""
-echo "---------------------- Build Complete ----------------------" 
+echo "---------------------- Build Complete ----------------------"
 echo "You will find the new 'android.img' in /lichee/tools/pack"
 echo "Burn this image to an SD card using PhoenixCard"
 echo "------------------------------------------------------------"
